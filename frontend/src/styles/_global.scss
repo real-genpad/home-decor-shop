@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 2px solid #2a592e;
+  border-radius: 3px;
+  padding: 17px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: $gray-text-color;
+}
+
+.small-input {
+  width: 40px;
+  height: 28px;
+  border: 1px solid #6cac72;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: $green-text-color;
+}
+
+.button {
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+  background: #456f49;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.mat-menu-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+
+  a {
+    text-decoration: none;
+    color: $gray-text-color;
+    cursor: pointer;
+  }
+}
