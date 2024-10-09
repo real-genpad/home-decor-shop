@@ -11,7 +11,7 @@
   <div class="catalog-filter-body">
     <label class="catalog-filter-checkbox" *ngFor="let type of categoryWithTypes?.types">
       <input type="checkbox" #input
-             [checked]="activeParams.types?.includes(type.url)"
+             [checked]="activeParams.types && activeParams.types.includes(type.url)"
              (change)="updateFilterParam(type.url, input.checked)">
       <span>{{type.name}}</span>
     </label>
