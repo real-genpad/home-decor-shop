@@ -1,0 +1,30 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/mixins";
+@import "../../../../styles/data-form";
+@import "../../../../styles/_personal";
+
+.info {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 128px;
+
+  .container {
+    .data-form {
+      .button {
+        width: 169px;
+      }
+    }
+  }
+
+  .page-image {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 700px);
+    z-index: -1;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+}

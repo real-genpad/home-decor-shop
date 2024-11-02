@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+.personal-title {
+  @include head-lora-32;
+  color: $green-text-color;
+  margin-bottom: 30px;
+}
+
+.personal-pages-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: $green-text-color;
+
+  .personal-page {
+    border-bottom: 2px solid #b6d5b9;
+    padding: 0 15px 13px;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 3px solid #519057;
+    }
+  }
+}
